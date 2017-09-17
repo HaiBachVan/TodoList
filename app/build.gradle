@@ -19,7 +19,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
@@ -38,15 +38,15 @@ kapt {
     generateStubs = true
 }
 
-ext.supportLibrary = '26.0.2'
+ext.supportLibrary = '26.1.0'
 ext.dagger2Version = '2.11'
 ext.rxjava2Version = '2.0.8'
 ext.rxandroidVersion = '2.0.1'
 ext.butterKnifeVersion = '8.6.0'
 ext.roomDatabaseCompilerVersion = '1.0.0-alpha8'
-ext.roomDatabaseVersion = '1.0.0-alpha9'
-ext.archLifecycleCompilerVersion = "1.0.0-alpha8"
-ext.archLifecycleVersion = "1.0.0-alpha8"
+ext.roomDatabaseVersion = '1.0.0-alpha9-1'
+ext.archLifecycleCompilerVersion = '1.0.0-alpha8'
+ext.archLifecycleVersion = '1.0.0-alpha9-1'
 ext.placeholderviewVersion = '0.6.1'
 ext.glideVersion = '3.7.0'
 ext.firebaseVersion = '11.2.0'
