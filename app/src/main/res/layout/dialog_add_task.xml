@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/viewDismiss"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="24dp"
+        android:background="#7f222e22" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <app.todo.core.view.CustomFontEditText
+            android:id="@+id/edTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:hint="@string/add_a_todo"
+            app:fontText="Lato-Regular.ttf" />
+
+        <RelativeLayout
+            android:id="@+id/layoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="#f7f6f6">
+
+            <app.todo.core.view.CustomFontTextView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/text_icon_set_date_reminder"
+                android:textSize="24dp"
+                app:fontName="Wundercon-Light.otf" />
+
+            <app.todo.core.view.CustomFontTextView
+                android:id="@+id/icon_set_date_reminder"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/text_icon_set_date_reminder"
+                android:textSize="24dp"
+                app:fontName="Wundercon-Light.otf" />
+
+            <app.todo.core.view.CustomFontTextView
+                android:id="@+id/icon_star"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_toEndOf="@id/icon_set_date_reminder"
+                android:gravity="center"
+                android:text="@string/text_icon_star"
+                android:textSize="24dp"
+                app:fontName="Wundercon-Light.otf" />
+
+            <app.todo.core.view.CustomFontTextView
+                android:id="@+id/buttonAdd"
+                style="?android:attr/actionButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/button_add"
+                android:textAllCaps="true"
+                android:textSize="16dp"
+                app:fontName="Lato-Bold.ttf" />
+
+            <app.todo.core.view.CustomFontTextView
+                android:id="@+id/buttonCancel"
+                style="?android:attr/actionButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@id/buttonAdd"
+                android:gravity="center"
+                android:text="@string/button_cancel"
+                android:textAllCaps="true"
+                android:textSize="16dp"
+                app:fontName="Lato-Bold.ttf"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutTask"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_above="@id/layoutButton"
+            android:background="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <app.todo.core.view.CustomFontTextView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/text_icon_list_name"
+                android:textSize="24dp"
+                app:fontName="Wundercon-Light.otf" />
+
+            <app.todo.core.view.CustomFontTextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Work"
+                android:textSize="18dp"
+                app:fontName="Lato-Regular.ttf" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_above="@id/layoutTask"
+            android:background="@color/line_color" />
+
+    </RelativeLayout>
+
+</LinearLayout>

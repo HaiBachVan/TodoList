@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:id="@+id/layout_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/color_background_blur" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_below="@id/status_bar"
+            android:background="@color/color_background_blur"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:titleMarginEnd="0dp"
+            app:titleMarginStart="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/wl_icon_default_avatar_big"
+                    tools:ignore="ContentDescription" />
+
+                <app.todo.core.view.CustomFontTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Newvalue"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    app:fontName="Lato-Regular.ttf" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <app.todo.core.view.CustomFontTextView
+                        android:id="@+id/notification"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:gravity="center"
+                        android:text="@string/text_icon_notification"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="30dp"
+                        app:fontName="Wundercon-Light.otf" />
+
+                    <app.todo.core.view.CustomFontTextView
+                        android:id="@+id/search"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:gravity="center"
+                        android:text="@string/text_icon_search"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="30dp"
+                        app:fontName="Wundercon-Light.otf" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/item_layout_today"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/toolbar"
+            android:background="@color/white_milk"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="56dp"
+                android:layout_height="48dp">
+
+                <app.todo.core.view.CustomFontTextView
+                    android:layout_width="56dp"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="@string/text_icon_background_date"
+                    android:textColor="@color/color_green_common"
+                    android:textSize="20dp"
+                    app:fontName="Wundercon-Light.otf" />
+
+                <app.todo.core.view.CustomFontTextView
+                    android:id="@+id/textDate"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/color_green_common"
+                    android:textSize="9dp"
+                    app:fontName="Lato-Regular.ttf" />
+
+            </FrameLayout>
+
+            <app.todo.core.view.CustomFontTextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/today"
+                android:textSize="18sp"
+                app:fontName="Lato-Regular.ttf" />
+
+            <app.todo.core.view.CustomFontTextView
+                android:id="@+id/countMiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/background_badge"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/colorRed"
+                app:fontName="Lato-Regular.ttf" />
+
+            <app.todo.core.view.CustomFontTextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="4dp"
+                android:text="1"
+                app:fontName="Lato-Regular.ttf" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/item_layout_today"
+            android:background="@color/white_milk" />
+
+        <app.todo.core.view.CustomFontTextView
+            android:id="@+id/addTodo"
+            android:layout_width="@dimen/td_fab_size"
+            android:layout_height="@dimen/td_fab_size"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:background="@drawable/floating_action_button"
+            android:gravity="center"
+            android:text="@string/text_icon_add_sub_task"
+            android:textColor="@color/colorWhite"
+            android:textSize="24dp"
+            app:fontName="Wundercon-Light.otf" />
+
+    </RelativeLayout>
+</FrameLayout>

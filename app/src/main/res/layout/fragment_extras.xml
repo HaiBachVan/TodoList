@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layout_set_date_reminder"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:focusable="true"
+        android:gravity="center_vertical">
+
+        <app.todo.core.view.CustomFontTextView
+            android:id="@+id/icon_set_date_reminder"
+            style="@style/text_view_icon_edit_reminder_style"
+            android:text="@string/text_icon_get_support"
+            android:textSize="24dp"
+            app:fontName="Wundercon-Light.otf" />
+
+        <app.todo.core.view.CustomFontTextView
+            android:id="@+id/text_set_date_reminder"
+            style="@style/text_view_edit_reminder_style"
+            android:text="@string/get_support"
+            android:textColor="@color/text_color_setting"
+            app:fontName="Lato-Regular.ttf" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="56dp"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/layout_add_sub_task"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:focusable="true"
+        android:gravity="center_vertical">
+
+        <app.todo.core.view.CustomFontTextView
+            style="@style/text_view_icon_edit_reminder_style"
+            android:text="@string/text_icon_about"
+            android:textSize="24dp"
+            app:fontName="Wundercon-Light.otf" />
+
+        <app.todo.core.view.CustomFontTextView
+            style="@style/text_view_edit_reminder_style"
+            android:text="@string/text_about"
+            android:textColor="@color/text_color_setting"
+            app:fontName="Lato-Regular.ttf" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="56dp"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:focusable="true"
+        android:gravity="center_vertical">
+
+        <app.todo.core.view.CustomFontTextView
+            style="@style/text_view_icon_edit_reminder_style"
+            android:text="@string/text_icon_write_review"
+            android:textSize="24dp"
+            app:fontName="Wundercon-Light.otf" />
+
+        <app.todo.core.view.CustomFontTextView
+            style="@style/text_view_edit_reminder_style"
+            android:text="@string/text_write_a_review"
+            android:textColor="@color/text_color_setting"
+            app:fontName="Lato-Regular.ttf" />
+
+    </LinearLayout>
+
+</LinearLayout>

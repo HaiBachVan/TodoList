@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b88d8">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="25dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:titleMarginEnd="0dp"
+        app:titleMarginStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <include
+                android:id="@+id/btnBack"
+                layout="@layout/layout_back_button" />
+
+            <app.todo.core.view.CustomFontTextView
+                android:id="@+id/buttonSave"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:alpha="0.5"
+                android:enabled="false"
+                android:text="@string/text_icon_selected"
+                android:textColor="@color/colorWhite"
+                android:textSize="30dp"
+                app:fontName="Wundercon-Light.otf"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginEnd="64dp"
+        android:layout_marginStart="64dp"
+        android:theme="@style/EditTextStyle3"
+        app:hintEnabled="true">
+
+        <requestFocus />
+
+        <app.todo.core.view.CustomFontEditText
+            android:id="@+id/name_group_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/list_name_hint"
+            android:paddingTop="8dp"
+            android:singleLine="true"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="24sp"
+            android:theme="@style/EditTextStyle2"
+            app:fontText="Lato-Regular.ttf" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout"
+        android:layout_marginTop="32dp"
+        android:background="@color/colorWhite" />
+
+</RelativeLayout>

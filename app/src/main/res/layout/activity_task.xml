@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/color_background_blur" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/color_background_blur"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:titleMarginEnd="0dp"
+            app:titleMarginStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    tools:ignore="RelativeOverlap">
+
+                    <include
+                        android:id="@+id/btnBack"
+                        layout="@layout/layout_back_button" />
+
+                    <app.todo.core.view.CustomFontTextView
+                        android:id="@+id/title_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20dp"
+                        app:fontName="Lato-Bold.ttf" />
+
+                </LinearLayout>
+
+                <app.todo.core.view.CustomFontTextView
+                    android:id="@+id/menu_sort"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/text_icon_sort"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp"
+                    android:visibility="visible"
+                    app:fontName="Wundercon-Light.otf"
+                    tools:ignore="RelativeOverlap" />
+
+                <app.todo.core.view.CustomFontTextView
+                    android:id="@+id/menu_add"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/menu_add"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    android:visibility="gone"
+                    app:fontName="Lato-Bold.ttf"
+                    tools:ignore="RelativeOverlap" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/background_add_reminder_group"
+            android:gravity="center_vertical">
+
+            <app.todo.core.view.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/text_icon_add_sub_task"
+                android:textColor="@color/colorWhite"
+                android:textSize="24dp"
+                app:fontName="Wundercon-Light.otf" />
+
+            <app.todo.core.view.CustomFontEditText
+                android:id="@+id/edToDo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/add_a_todo"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:theme="@style/EditTextStyle3"
+                app:fontText="Lato-Regular.ttf" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/wl_task_inputfield_star"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <ExpandableListView
+            android:id="@+id/listReminder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:childDivider="@android:color/transparent"
+            android:divider="@null"
+            android:dividerHeight="1dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:paddingBottom="8dp"
+            android:scrollbarSize="1dp"
+            android:scrollbarStyle="outsideOverlay" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_layout_name"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <app.todo.core.view.CustomFontTextView
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="@string/text_icon_list_name"
+        android:textSize="20dp"
+        app:fontName="Wundercon-Light.otf" />
+
+    <app.todo.core.view.CustomFontTextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        app:fontName="Lato-Regular.ttf" />
+
+    <app.todo.core.view.CustomFontTextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:fontName="Lato-Regular.ttf" />
+
+</LinearLayout>

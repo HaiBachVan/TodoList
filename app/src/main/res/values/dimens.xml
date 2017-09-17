@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="vertical_space">16dp</dimen>
+    <dimen name="horizontal_space">16dp</dimen>
+    <dimen name="avatar_thumbnail_stroke">2px</dimen>
+    <dimen name="td_fab_size">56dp</dimen>
+    <dimen name="fab_button_size">24dp</dimen>
+    <dimen name="icon_size_common">24dp</dimen>
+
+    <dimen name="action_bar_navigation_spinner_popup_fixed_offset">72dp</dimen>
+    <dimen name="action_bar_navigation_spinner_popup_fixed_offset_min">32dp</dimen>
+    <dimen name="actionbar_header_spinner_vector_offset">-8dip</dimen>
+    <dimen name="actionbar_spinner_horizontal_offset">16dp</dimen>
+    <dimen name="action_bar_navigation_spinner_popup_min_width">168dp</dimen>
+    <dimen name="text_size_icon_common">24dp</dimen>
+</resources>

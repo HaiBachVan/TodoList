@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbf9e4"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="25dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:titleMarginEnd="0dp"
+        app:titleMarginStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/btnBackLayout"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/backButtonImage"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="center"
+                        android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+                        android:tint="#5b5b5b"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+                <app.todo.core.view.CustomFontTextView
+                    android:id="@+id/title_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#404040"
+                    android:textSize="20dp"
+                    app:fontName="Lato-Bold.ttf" />
+
+            </LinearLayout>
+
+            <app.todo.core.view.CustomFontTextView
+                android:id="@+id/buttonSave"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:alpha="0.5"
+                android:gravity="center"
+                android:text="@string/text_icon_selected"
+                android:textColor="@color/color_text_enable_true"
+                android:textSize="30dp"
+                app:fontName="Wundercon-Light.otf"
+                tools:ignore="RelativeOverlap" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d6d6d6" />
+
+    <app.todo.core.view.CustomFontEditText
+        android:id="@+id/content_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@null"
+        android:hint="@string/add_a_note"
+        app:fontText="Lato-Regular.ttf" />
+
+</LinearLayout>

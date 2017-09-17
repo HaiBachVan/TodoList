@@ -1,0 +1,145 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorBlue</item>
+        <item name="colorPrimaryDark">@color/colorBlue</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+        <item name="android:alertDialogTheme">@style/AppTheme.Dialog</item>
+        <item name="android:popupMenuStyle">
+            @android:style/Widget.DeviceDefault.Light.PopupMenu
+        </item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/white_milk</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:alertDialogTheme">@style/AppTheme.Dialog</item>
+        <item name="android:popupMenuStyle">
+            @android:style/Widget.DeviceDefault.Light.PopupMenu
+        </item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionModeBackground">@color/colorWhite</item>
+        <item name="android:actionModeStyle">@style/ActionMode</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionModeNoCloseButton</item>
+        <item name="android:overlapAnchor">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Default" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/white_milk</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:alertDialogTheme">@style/AppTheme.Dialog</item>
+        <item name="android:popupMenuStyle">
+            @android:style/Widget.DeviceDefault.Light.PopupMenu
+        </item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionModeBackground">@color/colorWhite</item>
+        <item name="android:actionModeStyle">@style/ActionMode</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionModeNoCloseButton</item>
+    </style>
+
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ActionModeNoCloseButton" parent="@android:style/Widget.ActionButton.CloseMode">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="ActionMode">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:height">?attr/actionBarSize</item>
+    </style>
+
+    <style name="CheckBoxStyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorBlue</item>
+        <item name="colorControlActivated">@color/colorBlue</item>
+    </style>
+
+    <style name="ProgressBarStyle" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorWhite</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">20sp</item>
+        <item name="colorAccent">@color/colorBlue</item>
+    </style>
+
+    <style name="EditTextStyle2" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">20sp</item>
+        <item name="colorAccent">@color/colorWhite</item>
+    </style>
+
+    <style name="EditTextStyle3" parent="AppTheme">
+        <item name="colorAccent">@color/colorWhite</item>
+    </style>
+
+    <style name="text_view_edit_reminder_style">
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#a3a3a3</item>
+    </style>
+
+    <style name="text_view_icon_edit_reminder_style">
+        <item name="android:textSize">24dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#a3a3a3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+    </style>
+
+    <style name="TodoListThemeDatePicker" parent="android:Widget.Material.CalendarView">
+        <item name="colorPrimary">@color/colorBlue</item>
+        <item name="colorPrimaryDark">@color/colorBlue</item>
+        <item name="colorAccent">@color/colorBlue</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="TodoListThemeTimePicker" parent="android:Widget.Material.TimePicker">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="colorPrimary">@color/colorBlue</item>
+        <item name="colorPrimaryDark">@color/colorBlue</item>
+        <item name="colorAccent">@color/colorBlue</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+    </style>
+
+    <style name="AppThemeAccount" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorBlue</item>
+        <item name="colorPrimaryDark">@color/colorBlue</item>
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="DialogFullScreenStyle" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@color/colorBlue</item>
+    </style>
+
+</resources>

@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">TodoList</string>
+    <string name="create_list">Create list</string>
+    <string name="set_date_reminder"><![CDATA[Set Date & Reminder]]></string>
+    <string name="add_a_sub_task">Add a subtask</string>
+    <string name="add_a_note">Add a note&#8230;</string>
+    <string name="add_a_file">Add a file</string>
+    <string name="reminder_me">Remind me</string>
+    <string name="repeat_every">Repeat every&#8230;</string>
+    <string name="text_icon_repeat">f</string>
+    <string name="text_icon_remind_me">l</string>
+    <string name="text_icon_add_note">N</string>
+    <string name="text_icon_attach_file">S</string>
+    <string name="text_icon_add_sub_task">,</string>
+    <string name="text_icon_set_date_reminder">P</string>
+    <string name="text_icon_cancel">4</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_accept">Accept</string>
+    <string name="button_save">Save</string>
+    <string name="button_remove">Remove</string>
+    <string name="due_today">Due Today</string>
+    <string name="text_icon_cancel_big">)</string>
+    <string name="text_icon_list_name">K</string>
+    <string name="list_name_hint">List Name</string>
+    <string name="text_icon_selected">H</string>
+    <string name="add_a_todo">Add a to-do&#8230;</string>
+    <string name="show_completed_to_dos">Show completed to-dos</string>
+    <string name="completed_to_dos">Completed to-dos</string>
+    <string name="text_icon_sort">a</string>
+    <string name="menu_add">Add</string>
+    <string name="reminder_me_format">Reminder %1$s at %2$s</string>
+    <string name="today">Today</string>
+    <string name="never_repeat">Never repeat</string>
+    <string name="every_day">Every day</string>
+    <string name="every_week">Every week</string>
+    <string name="every_month">Every month</string>
+    <string name="every_year">Every year</string>
+    <string name="text_custom">Custom&#8230;</string>
+    <string name="button_ok">OK</string>
+    <string name="dialog_repeat_every">Repeat every %s</string>
+    <string name="text_days">days</string>
+    <string name="text_weeks">weeks</string>
+    <string name="text_months">months</string>
+    <string name="text_years">years</string>
+    <string name="due_date">Due %s</string>
+    <string name="text_account">Account</string>
+    <string name="text_general">General</string>
+    <string name="text_extras">Extras</string>
+    <string name="text_icon_notification">m</string>
+    <string name="text_icon_search">z</string>
+    <string name="text_icon_background_date">E</string>
+    <string name="text_settings">Settings</string>
+    <string name="text_account_details">Account Details</string>
+    <string name="text_notifications">Notifications</string>
+    <string name="text_sign_out">Sign Out</string>
+    <string name="text_icon_account_details">k</string>
+    <string name="text_icon_sign_out">n</string>
+    <string name="get_support">Get Support</string>
+    <string name="text_icon_get_support">t</string>
+    <string name="text_icon_about">u</string>
+    <string name="text_about">About</string>
+    <string name="text_icon_write_review">v</string>
+    <string name="text_write_a_review">Write a Review</string>
+    <string name="text_icon_background">o</string>
+    <string name="text_background">Background</string>
+    <string name="snooze_reminders">Snooze reminders for:</string>
+    <string name="text_icon_auto_reminder">e</string>
+    <string name="enable_auto_reminders">Enable auto reminders</string>
+    <string name="text_sounds">Sounds</string>
+    <string name="text_widget">Widget</string>
+    <string name="text_icon_sounds">r</string>
+    <string name="text_icon_widget">E</string>
+    <string name="text_activities">Activities</string>
+    <string name="text_reminder">Reminder:</string>
+    <string name="text_icon_star">C</string>
+    <string name="button_add">Add</string>
+
+    <string name="text_morning">Morning (%s)</string>
+    <string name="text_noon">Noon(%s)</string>
+    <string name="text_afternoon">Afternoon (%s)</string>
+    <string name="text_evening">Evening (%s)</string>
+    <string name="text_night">Night (%s)</string>
+
+    <string name="text_work">Work</string>
+    <string name="text_travel">Travel</string>
+    <string name="text_family">Family</string>
+    <string name="text_movies_to_watch">Movies to Watch</string>
+    <string name="text_private">Private</string>
+
+    <string-array name="dialog_text_type_repeat">
+        <item>@string/text_days</item>
+        <item>@string/text_weeks</item>
+        <item>@string/text_months</item>
+        <item>@string/text_years</item>
+    </string-array>
+
+    <string-array name="dialog_reminder_repeat">
+        <item>Morning (9:00)</item>
+        <item>Noon(12:00)</item>
+        <item>Afternoon (15:00)</item>
+        <item>Evening (18:00)</item>
+        <item>Night (21:00)</item>
+        <item>Custom&#8230;</item>
+    </string-array>
+
+    <!-- no need translate -->
+    <string name="EEEEddmmyy" translatable="false">"EEEE dd/MM/yyyy"</string>
+    <string name="EEEEddmm" translatable="false">"EEEE dd/MM"</string>
+    <string name="EEEEmmddyy" translatable="false">"EEEE MM/dd/yyyy"</string>
+    <string name="EEEEyymmdd" translatable="false">"EEEE yyyy/MM/dd"</string>
+    <string name="Eddmmyy" translatable="false">"E, dd/MM/yyyy"</string>
+    <string name="Eddmm" translatable="false">"E, dd/MM"</string>
+    <string name="ddmmyy" translatable="false">"dd/MM/yyyy"</string>
+    <string name="mmddyy" translatable="false">"MM/dd/yyyy"</string>
+    <string name="yymmdd" translatable="false">"yyyy/MM/dd"</string>
+    <string name="arabic_comma" translatable="false">"،"</string>
+
+    <!-- String resource for post fix on date format -->
+    <string name="day_postfix" translatable="false"></string>
+    <string name="year_postfix" translatable="false"></string>
+    <string name="date_postfix" translatable="false"></string>
+
+</resources>

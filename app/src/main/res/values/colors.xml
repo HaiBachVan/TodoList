@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fafafa</color>
+    <color name="colorPrimaryDark">#FF9933</color>
+    <color name="colorAccent">#e67e22</color>
+    <color name="white_milk">#fafafa</color>
+    <color name="colorBlue">#3498db</color>
+    <color name="colorOrange">#e67e22</color>
+    <color name="colorWhite">#fafafa</color>
+    <color name="colorGreen">#2ecc71</color>
+    <color name="colorPurple">#9b59b6</color>
+    <color name="colorGray">#d4d4d4</color>
+    <color name="colorRed">#EE0000</color>
+    <color name="color_blue_background">#7f3498db</color>
+    <color name="button_background_color">#f0f0f0</color>
+
+    <color name="primary">#42afbf</color>
+    <color name="color_control_activate">#55b7c6</color>
+    <color name="primary_checkBox">@color/color_control_activate</color>
+    <color name="primary_dark_color">#3fa1af</color>
+    <color name="primary_menu_color">@color/primary_dark_color</color>
+    <color name="reminder_actionbar_back_icon_tint_color">@color/primary</color>
+    <color name="status_bar_bg_color">#fafafa</color>
+    <color name="actionbar_bg">#fafafa</color>
+
+    <color name="theme_avatar_stroke_letter_color">#FF929292</color>
+    <color name="basic_tint">#FFFAFAFA</color>
+    <color name="transparent">#00252525</color>
+    <color name="floating_button_image_tint">@color/transparent</color>
+    <color name="attach_icon_color">#a3a3a3</color>
+    <color name="text_icon_image_default">#a3a3a3</color>
+    <color name="line_color">#dadad8</color>
+    <color name="color_text_enable_false">#5b5b5b</color>
+    <color name="color_text_enable_true">#242121</color>
+    <color name="text_color_common">#000000</color>
+    <color name="color_background_blur">#7f1f5017</color>
+    <color name="color_green_common">#6ea734</color>
+    <color name="color_background_reminder_done_blur">#7fffffff</color>
+    <color name="text_color_setting">#575757</color>
+
+</resources>

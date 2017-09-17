@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="24dp"
+    android:paddingStart="24dp">
+
+    <app.todo.core.view.CustomFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:text="@string/add_a_sub_task"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:fontName="Lato-Bold.ttf"/>
+
+    <app.todo.core.view.CustomFontEditText
+        android:id="@+id/ed_alert_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:paddingTop="24dp"
+        android:theme="@style/EditTextStyle"
+        app:fontText="Lato-Regular.ttf"
+        tools:ignore="LabelFor"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="24dp">
+
+        <app.todo.core.view.CustomFontTextView
+            android:id="@+id/buttonAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:paddingEnd="0dp"
+            android:paddingStart="18dp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorGray"
+            android:enabled="false"
+            android:textSize="15sp"
+            app:fontName="Lato-Bold.ttf"/>
+
+        <app.todo.core.view.CustomFontTextView
+            android:id="@+id/buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_toStartOf="@id/buttonAccept"
+            android:gravity="center"
+            android:paddingEnd="16dp"
+            android:paddingStart="18dp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlue"
+            android:textSize="15sp"
+            app:fontName="Lato-Bold.ttf"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

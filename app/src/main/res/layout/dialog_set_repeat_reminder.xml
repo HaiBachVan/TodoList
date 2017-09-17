@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <app.todo.core.view.CustomFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp"
+        android:text="@string/repeat_every"
+        android:textSize="24sp"
+        app:fontName="Lato-Bold.ttf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp">
+
+        <Spinner
+            android:id="@+id/numOfRepeat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/typeOfRepeat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <app.todo.core.view.CustomFontTextView
+        android:id="@+id/dialog_text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp"
+        android:textSize="16sp"
+        app:fontName="Lato-Regular.ttf" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="24dp"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp">
+
+        <app.todo.core.view.CustomFontTextView
+            android:id="@+id/buttonOK"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:paddingEnd="0dp"
+            android:paddingStart="18dp"
+            android:text="@string/button_ok"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlue"
+            android:textSize="15sp"
+            app:fontName="Lato-Bold.ttf" />
+
+        <app.todo.core.view.CustomFontTextView
+            android:id="@+id/buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_toStartOf="@id/buttonOK"
+            android:gravity="center"
+            android:paddingEnd="16dp"
+            android:paddingStart="18dp"
+            android:text="@string/button_cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlue"
+            android:textSize="15sp"
+            app:fontName="Lato-Bold.ttf" />
+
+    </RelativeLayout>
+
+</LinearLayout>
